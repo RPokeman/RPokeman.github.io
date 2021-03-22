@@ -9,11 +9,11 @@
     .button{
       border: none;
       color: white;
-      padding: 16px 32px;
+      padding: 48px 32px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 18px;
+      font-size: 32px;
       margin: auto;
       transition-duration: .2s;
       cursor: pointer;
@@ -21,7 +21,7 @@
 
     .buttonSignOut{
       position: absolute;
-      top: 400px;
+      top: 25px;
       right: 50px;
       background-color: white;
       color: black;
@@ -42,16 +42,17 @@
     <h1>Sign-In/Out Demo</h1>
   
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-      <script> src="Script/signIn.js"</script>
-      <button class="buttonSignOut" onclick="signOut();">Sign out</button>
-      <a href="#" onclick="signOut();">Sign out</a>
-      <script> src="Script/signOut.js"</script>
-      <!--<script>function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log('User signed out.');
-        });
-      }
-      </script>-->
+    <script> src="Script/signIn.js"</script>
+    <button class="buttonSignOut" onclick="signOut();">Sign out</button>
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script> src="Script/signOut.js"</script>
+    <script>function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    }
+    <img src="https://mail.google.com/mail/u/0/?logout&hl=en" />
+    </script>
   </body>
 </html>
