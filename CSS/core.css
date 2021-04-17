@@ -3,7 +3,7 @@ body {
 }
 .topBar {
     background-color: gray;
-    text-align: center;
+    text-align: justify;
     position: relative;
     width: 100%;
     height: min-content;
@@ -30,7 +30,7 @@ body {
 }
 .topBar img{
     float: left;
-    height: 100px;
-    width: 100px;
-    padding: 14px 14px;
+    height: 10vmin;
+    width: 10vmin;
+    padding: 1vmin 1vmin;
 }
